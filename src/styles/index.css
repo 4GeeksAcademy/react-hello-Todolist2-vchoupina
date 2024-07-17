@@ -1,12 +1,79 @@
+body {
+  background: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+}
 
-/* 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+h1 {
+  font-size: 85px;
+  color: rgba(28, 58, 34, 0.55);
+  margin-bottom: 20px;
+}
 
-*/
+.content {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2),
+    0 25px 50px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 16px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  padding: 16px;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li:hover .remove-icon {
+  display: inline;
+}
+
+.remove-icon {
+  display: none;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.footer {
+  padding: 15px;
+  text-align: left;
+  font-size: 15px;
+  color: #777;
+  border-top: 2px solid #ededed;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #b1b1b1;
+  font-style: italic;
+  font-size: 18px;
+}
